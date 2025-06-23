@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#define MAX_CIDADES 2
+#define MAXI_CIDADES 2
 #define CODIGO_TAMANHO 5
 #define NOME_CIDADE_TAMANHO 50
 
@@ -52,14 +52,14 @@ void exibirDados(const Carta *carta) {
 }
 
 int main() {
-    Carta cartas[MAX_CIDADES];
+    Carta cartas[MAXI_CIDADES];
 
-    for (int i = 0; i < MAX_CIDADES; i++) {
+    for (int i = 0; i < MAXI_CIDADES; i++) {
         printf("\n--- Dados da Carta %d ---\n", i + 1);
         lerDados(&cartas[i]);
     }
 
-    for (int i = 0; i < MAX_CIDADES; i++) {
+    for (int i = 0; i < MAXI_CIDADES; i++) {
         printf("\n--- Exibindo Dados da Carta %d ---\n", i + 1);
         exibirDados(&cartas[i]);
     }
